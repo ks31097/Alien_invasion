@@ -1,15 +1,18 @@
 import sys
 import pygame
 
+from settings import Settings
+
 class AlienInvasion:
     """A class for managing resources and game behavior."""
     def __init__(self):
         """Initializes the game and creates game resourses."""
         pygame.init()
-        self.screen = pygame.display.set_mode((1200, 800))
+        self.settings = Settings()
+        self.screen = pygame.display.set_mode((self.settings.screen_width, self.settings.screen_height))
         pygame.display.set_caption("Alien Invasion")
         """Assigning a background color."""
-        self.bg_color = (230, 230, 230)
+        self.bg_color = self.settings.bg_color
 
     def run_game(self):
         """Starting the main game loop."""
