@@ -53,6 +53,7 @@ nav-msgs==4.2.4
 osrf-pycommon==2.0.2
 pcl-msgs==1.0.0
 pendulum-msgs==0.20.5
+pillow==11.0.0
 pygame==2.6.1
 python-qt-binding==1.1.2
 qt-dotgraph==2.2.3
